@@ -1,0 +1,5 @@
+{
+    "name": "arrow",
+    "fetch": "https://github.com/ArrowOS/android_packages_apps_Launcher3",
+    "revision": "refs/heads/arrow-13.0"
+}
