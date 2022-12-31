@@ -59,7 +59,7 @@ import com.android.quickstep.TouchInteractionService;
 import com.android.systemui.unfold.UnfoldTransitionProgressProvider;
 import com.android.systemui.unfold.util.ScopedUnfoldTransitionProgressProvider;
 
-import android.provider.Settings;
+import lineageos.providers.LineageSettings;
 
 import java.io.PrintWriter;
 
@@ -204,7 +204,7 @@ public class TaskbarManager implements OnSharedPreferenceChangeListener {
                 SystemUiProxy.INSTANCE.get(mContext).setTaskbarEnabled(enabled);
 
                 Settings.System.putInt(mContext.getContentResolver(),
-                        Settings.System.ENABLE_TASKBAR, enabled ? 1 : 0);
+                        LineageSettings.System.ENABLE_TASKBAR, enabled ? 1 : 0);
                 break;
         }
     }
